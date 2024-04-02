@@ -20,17 +20,37 @@ const HeroSection = () => {
               Secured Dapps Ecosystem & Community Crypto Innovation or
               Community-Based Technologies Ecosystem
             </p>
-            <Link
+
+            {address!=null?(
+              <Link
               to="./dashboard/home"
               className="button !flex items-center justify-center gap-2 w-max btn-radius sm:mt-6 mt-3"
             >
               <h1 className="text-[#101010] text-base font-normal">
-                {address==null?("Get Started"):("Go To Dashboard")}
+              Go To Dashboard              </h1>
+              <div className="flex items-center justify-center h-4 w-4">
+                <ArrowRightIcon />
+              </div>
+            </Link>
+
+            ):(
+              <Link
+              to="#"
+              className="button !flex items-center justify-center gap-2 w-max btn-radius sm:mt-6 mt-3"
+            >
+              <h1 className="text-[#101010] text-base font-normal">
+                Get Started
               </h1>
               <div className="flex items-center justify-center h-4 w-4">
                 <ArrowRightIcon />
               </div>
             </Link>
+
+            )}
+            
+
+            
+
           </div>
           <div className="right flex items-center justify-center flex-1 relative">
             <img src="./images/bg-hero.svg" className="h-60 w-full z-20" />
