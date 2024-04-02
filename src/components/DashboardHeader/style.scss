@@ -1,0 +1,43 @@
+@mixin dropDownAnim($duration: 0.3s) {
+  animation-name: drop;
+  animation-duration: $duration;
+  transform-origin: top;
+}
+
+// Header
+.dashboard-header {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 78px;
+  padding: 8px 10px;
+  position: absolute;
+  background: transparent;
+  border-bottom: 1px solid #616161;
+
+  .wrap {
+    .left {
+      flex: 0.2;
+
+      @include media("<=tablet") {
+        flex: 1;
+      }
+
+      .logo-img {
+        .logo {
+          height: 80px;
+
+          @include media("<=tablet") {
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+    }
+  }
+}

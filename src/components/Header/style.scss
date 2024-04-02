@@ -1,0 +1,107 @@
+@mixin dropDownAnim($duration: 0.3s) {
+  animation-name: drop;
+  animation-duration: $duration;
+  transform-origin: top;
+}
+
+// Header
+.header-camp {
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 90px;
+  padding: 12px 0px;
+  position: absolute;
+  background: transparent;
+
+  .wrap {
+    .left {
+      flex: 0.2;
+
+      @include media("<=tablet") {
+        flex: 1;
+      }
+
+      .logo-img {
+        .logo {
+          height: 80px;
+
+          @include media("<=tablet") {
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+
+      .menu-list {
+        @include media("<=tablet") {
+          display: none;
+        }
+
+        .menu-item {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 29px;
+          text-align: left;
+          color: #ffffff;
+          cursor: pointer;
+          @include anim;
+
+          &:hover {
+            color: $themeColor;
+          }
+        }
+      }
+
+      .dropdown-list-menu {
+        background: #fff;
+        width: 180px;
+        position: absolute;
+        top: 45px;
+        right: 0px;
+        padding: 8px 0px;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 16px;
+        border-radius: 4px;
+
+        &.show {
+          @include dropDownAnim;
+        }
+
+        .tag {
+          color: #121212;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 6px 12px;
+        }
+      }
+
+      .logout-action {
+        // @include media("<=tablet") {
+        //   display: none;
+        // }
+
+        .btn {
+          font-size: 14px;
+          text-align: center;
+          color: #101010;
+          padding: 6px 12px;
+
+          @include media("<=tablet") {
+            font-size: 12px;
+            padding: 6px;
+            width: max-content;
+
+            div {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
