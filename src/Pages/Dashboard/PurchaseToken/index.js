@@ -295,7 +295,7 @@ function set_TotalPrice(num)
                   <p className="text-white font-extralight text-sm leading-4">
                     Only 10,000 Node Licenses will over be released. Prices will
                     Increase as nodes are sold, to ensure our early supporters
-                    are rewarded. ({props.referral})
+                    are rewarded.
                   </p>
                 </div>
                 <div className="flex items-center justify-center h-36 w-36">

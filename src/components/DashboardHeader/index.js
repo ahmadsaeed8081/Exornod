@@ -31,12 +31,12 @@ const Header = () => {
           </Link>
         </div>
         <div className="right flex items-center justify-end gap-6">
-          <div className="flex items-center justify-center relative cursor-pointer">
+          {/* <div className="flex items-center justify-center relative cursor-pointer">
             <div className="flex items-center justify-center h-6 w-6">
               <BellIcon />
             </div>
             <div className="flex items-center justify-center rounded-full h-2 w-2 bg-[#C13038] absolute top-0 right-0"></div>
-          </div>
+          </div> */}
           <div className="flex items-center justify-center relative">
             <div className="flex items-center justify-center h-8 w-8">
               <img
