@@ -60,7 +60,7 @@ const DashboardSidebar = () => {
     { title: "Shop",
      icon: <ShopIcon />,
      status: "Coming Soon",
-     link: "/dashboard/shop" 
+     link: "#" 
     },
 
     {
@@ -85,7 +85,7 @@ const DashboardSidebar = () => {
       title: "Pools",
       icon: <PoolsIcon />,
       status: "Coming Soon",
-      link: "/dashboard/pools",
+      link: "#",
     },
     {
       title: "Vaults",
