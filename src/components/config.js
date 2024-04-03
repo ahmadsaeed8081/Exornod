@@ -1,10 +1,10 @@
-export const cont_address="0x815fe660c1EC15b80B359C6188e908684d414d21";
+export const cont_address="0x4b5181ed6E151d6Bd488182b41a46DdC0637b78c";
 
 export const USDT_Address="0xc16b32F200eA3c91E06c016e3F19738459F74146";
 export const DAI_Address="0xd562bEA1e3ca6236e3c2626b5E1499f44E9002b7";
 export const EXOR_Address="0x12B17f2786bF83F7E5a2337b2b5A0bdD4eba313e";
 
-export const NOD_Address="0xe442F8fF8aB966AcB661727114111828e738b864";
+export const NOD_Address="0xFb3Fabfd17E8F06EB57eb33ea65879d2062325b7";
 
 export const cont_abi=[
 	{
