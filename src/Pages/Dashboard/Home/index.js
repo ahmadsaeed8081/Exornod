@@ -60,7 +60,8 @@ const DashboardHome = (props) => {
   
       address: cont_address,
       abi: cont_abi,
-      functionName: 'activate_Ref',                                                           
+      functionName: 'activate_Ref',      
+      args: [props.referral] ,                                                   
       value: props.FeePrice_MATIC,
     })
     
@@ -92,9 +93,9 @@ const DashboardHome = (props) => {
           return;
         }
       
-        if(Number(props.MATIC_Balance) < props.FeePrice_MATIC)
+        if(Number(props.MATIC_Balance) < Number(props.FeePrice_MATIC))
         {
-          alert("You dont have enough balance"+ props.FeePrice_MATIC);
+          alert("You dont have enough balance");
           return;
         }
 

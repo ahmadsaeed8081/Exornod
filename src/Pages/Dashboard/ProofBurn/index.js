@@ -166,6 +166,11 @@ const ProofBurn = (props) => {
       alert("kindly connect your wallet");
       return;
     }
+    if(!props.is_eligible)
+    {
+      alert("To Earn Burn Reward, You have to buy NOD NFT or activate your Referral link ");
+      return;
+    }
     if(burnAmount==0 )
     {
       alert("kindly write amount to burn ");
@@ -221,7 +226,7 @@ const ProofBurn = (props) => {
                   Total Burn
                 </h1>
                 <h2 className="zen-dots text-white font-normal text-xs">
-                {Number(props.totalBurnAmount).toFixed(2)} EXOR
+                {(Number(props.totalBurnAmount)/10**18).toFixed(2)} EXOR
                 </h2>
               </div>
               
@@ -236,7 +241,7 @@ const ProofBurn = (props) => {
                   Total Reward
                 </h1>
                 <h2 className="zen-dots text-white font-normal text-xs">
-                  {Number(props.total_BurnReward).toFixed(2)} EXOR
+                  {(Number(props.total_BurnReward)/10**18).toFixed(2)} EXOR
                 </h2>
               </div>
             </div>

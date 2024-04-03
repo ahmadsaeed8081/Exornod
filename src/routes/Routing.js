@@ -138,7 +138,7 @@ const Routing = () => {
     let feePriceInDollar = await contract.methods.feePriceInDollar().call();
 
     let PerNodePrice_matic = await contract.methods.getConversionRate(PerNodePrice).call();
-    let FeePrice_matic = await contract.methods.getConversionRate(feePriceInDollar).call();
+    let FeePrice_matic = await contract.methods.getConversionRate_fee(feePriceInDollar).call();
 
     let user_NodRew = await contract.methods.get_userRew(address).call();    
 
@@ -236,7 +236,7 @@ const Routing = () => {
             path="home"
             element={
               <Public>
-                <DashboardHome  loader={loader} directRew={directRew} FeePrice_MATIC={FeePrice_MATIC} MATIC_Balance={MATIC_Balance} total_NodReward={total_NodReward} total_BurnReward={total_BurnReward} is_eligible={is_eligible} nod_bal={nod_bal} totalEarning={totalEarning} Toraldirects={Toraldirects} avail_balance={avail_balance} Total_withdraw={Total_withdraw}  EXOR_Balance={EXOR_Balance}/>
+                <DashboardHome referral={referral} loader={loader} directRew={directRew} FeePrice_MATIC={FeePrice_MATIC} MATIC_Balance={MATIC_Balance} total_NodReward={total_NodReward} total_BurnReward={total_BurnReward} is_eligible={is_eligible} nod_bal={nod_bal} totalEarning={totalEarning} Toraldirects={Toraldirects} avail_balance={avail_balance} Total_withdraw={Total_withdraw}  EXOR_Balance={EXOR_Balance}/>
               </Public>
             }
           />
@@ -261,7 +261,7 @@ const Routing = () => {
             path="proof-burn"
             element={
               <Public>
-                <ProofBurn loader={loader} total_BurnReward={total_BurnReward} totalBurnAmount={totalBurnAmount} totalBurn={totalBurn} allBurns={allBurns} EXOR_Balance={EXOR_Balance} test={test} minburn={minburn} maxburn={maxburn}/>
+                <ProofBurn is_eligible={is_eligible} loader={loader} total_BurnReward={total_BurnReward} totalBurnAmount={totalBurnAmount} totalBurn={totalBurn} allBurns={allBurns} EXOR_Balance={EXOR_Balance} test={test} minburn={minburn} maxburn={maxburn}/>
               </Public>
             }
           />
