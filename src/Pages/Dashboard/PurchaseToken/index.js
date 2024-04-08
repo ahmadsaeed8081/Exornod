@@ -259,25 +259,21 @@ function set_TotalPrice(num)
             <div className="flex flex-col flex-1 gap-4">
               <div className="bg-black p-5 rounded-sm flex flex-col gap-5">
                 <h1 className="text-themeColor zen-dots text-base">
-                  Founder Node License
+                Founder NOD
                 </h1>
                 <p className="text-white font-extralight text-sm leading-4">
-                  Grow with us and be rewarded. A Nodewaves Node License allows
-                  you to operate a node from your home computer to support the
-                  growth of Nodewaves decentralized network. As a node owner,
-                  you'll earn daily rewards and exclusive benefits for your
-                  contribution.
+                 Unlock exclusive benefits by holding your founder nod. Contribute early to projects for rewards. Enjoy transparent, anonymous transactions for full benefits. Maximize your rewards and support projects from the start.
+
                 </p>
               </div>
               <div className="p-5 rounded-sm flex gap-5 border border-[#6B6B6B]">
                 <div className="flex flex-col gap-3 w-full">
                   <h1 className="text-themeColor zen-dots text-base">
-                    Be rewarded for your contribution
+                    Ownership Transfer
                   </h1>
                   <p className="text-white font-extralight text-sm leading-4">
-                    Node owners will be rewarded with exclusive NFT drop and
-                    daily Nodewaves token rewards for their contribution to the
-                    network.
+                  Enjoy hassle-free transfer of exclusive founder NFTs and decentralized founder nod rewards. Transfer ownership effortlessly and receive contribution rewards seamlessly.
+
                   </p>
                 </div>
                 <div className="flex items-center justify-center h-36 w-36">
@@ -290,12 +286,11 @@ function set_TotalPrice(num)
               <div className="p-5 rounded-sm flex gap-5 border border-[#6B6B6B]">
                 <div className="flex flex-col gap-3 w-full">
                   <h1 className="text-themeColor zen-dots text-base">
-                    Limited supply available 
+                  Security  
                   </h1>
                   <p className="text-white font-extralight text-sm leading-4">
-                    Only 10,000 Node Licenses will over be released. Prices will
-                    Increase as nodes are sold, to ensure our early supporters
-                    are rewarded.
+                  Exornod leverages Polygon MATIC blockchain, offering secure, decentralized ledger technology with no single point of failure, ensuring robust security and reliability for users' transactions and data
+
                   </p>
                 </div>
                 <div className="flex items-center justify-center h-36 w-36">
@@ -308,11 +303,10 @@ function set_TotalPrice(num)
               <div className="p-5 rounded-sm flex gap-5 border border-[#6B6B6B]">
                 <div className="flex flex-col gap-3 w-full">
                   <h1 className="text-themeColor zen-dots text-base">
-                    More power than just network support
+                  Limited Supply
                   </h1>
                   <p className="text-white font-extralight text-sm leading-4">
-                    Be a part of the Nodewaves governance system and contribute
-                    to the scalling of future digital asset ownership.
+                  Exornod implements a unique upgradable smart contract to enhance the Exornod Ecosystem. It introduces a limited supply of 10,000 Founder NOD and 50 billion EXOR tokens.
                   </p>
                 </div>
                 <div className="flex items-center justify-center h-36 w-36">

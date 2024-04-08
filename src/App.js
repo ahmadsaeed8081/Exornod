@@ -56,7 +56,7 @@ function App() {
         <Routing />
     
       </WagmiConfig>
-z
+
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
     </>
   );
